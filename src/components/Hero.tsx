@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
     return (
-        <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
             {/* Background Video */}
             <div className="absolute inset-0 z-0">
                 <video
@@ -16,7 +16,7 @@ const Hero = () => {
                     className="w-full h-full object-cover"
                 >
                     <source
-                        src="https://pixabay.com/videos/man-stairs-walk-hike-travel-152203/"
+                        src="/video.mp4"
                         type="video/mp4"
                     />
                     Your browser does not support the video tag.
