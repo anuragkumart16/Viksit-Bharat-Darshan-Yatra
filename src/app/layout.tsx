@@ -18,8 +18,7 @@ export const metadata: Metadata = {
   description: "Experience the journey of a developed India.",
 };
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import ClientLayout from "@/components/ClientLayout";
 
 export default function RootLayout({
   children,
@@ -29,13 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${merriweather.variable} antialiased flex flex-col min-h-screen`}
+        className={`${inter.variable} ${merriweather.variable} antialiased`}
       >
-        <Navbar />
-        <main className="grow pt-16">
-          {children}
-        </main>
-        <Footer />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

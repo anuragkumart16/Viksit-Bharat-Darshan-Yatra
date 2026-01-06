@@ -1,6 +1,9 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Gallery from "@/components/Gallery";
+import Stats from "@/components/Stats";
+import WhyJoin from "@/components/WhyJoin";
+import Testimonials from "@/components/Testimonials";
+import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -8,7 +11,10 @@ export default function Home() {
     <div className="flex flex-col gap-0">
       <Hero />
       <About />
-      <Gallery />
+      <Stats />
+      <WhyJoin />
+      <Testimonials />
+      <CTA />
       <Contact />
     </div>
   );
